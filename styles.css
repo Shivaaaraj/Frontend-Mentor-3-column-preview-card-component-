@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Lexend+Deca:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Big+Shoulders+Display:100,200,300,regular,500,600,700,800,900);
+
+
+body {
+  background: hsl(0, 0%, 95%);
+  width: 100%;
+  height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+}
+.container {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5rem 9rem;
+  height: 30rem;
+}
+
+.card {
+  background: #e38826;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.card h1 {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+.card p {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: -2rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 50px;
+  color: hsl(0, 0%, 95%);
+}
+.btn:hover {
+  background: hsl(0, 0%, 95%);
+}
+
+.card:nth-child(2){
+  background: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(2) .btn:hover{
+  color: hsl(184, 100%, 22%);
+}
+.card:nth-child(3){
+  background:hsl(179, 100%, 13%);
+}
+
+.card:nth-child(3) .btn:hover{
+  color: hsl(179, 100%, 13%);
+}
+/* Attributes Styling */
+.attribution {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); 
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
